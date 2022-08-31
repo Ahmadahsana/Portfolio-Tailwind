@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#berubah {
+    filter : brightness(100) invert(1);
+    /* background-clip : text; */
+
+    /* -webkit-background-clip : text; */
+    /* -webkit-text-fill-color : transparent; */
+    animation: kedip 10s ease-in-out infinite;
+}
+
+@keyframes kedip {
+   0% {
+    filter : brightness(100) invert(1);
+   }
+
+   11% {
+    filter : none;
+   }
+
+   33% {
+    filter : none
+   }
+
+   55% {
+    filter : brightness(100) invert(1);
+   }
+}
